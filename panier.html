@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Congo Market</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style_panier.css">
+	</head>
+	<body>
+		<header>
+				<div id="head_color">
+					<div id="sfranc">
+						<select name="monnaie" id="monnaie">
+							<option value="Franc">FC</option><br>
+							<option value="Dollard">USD</option>
+						</select>
+					</div>
+					<div id="logo"><a href="#">CONGO MARKET</a></div>
+					<div id="Ouvrir"><a href="#">Sign in</a></div>
+					<div id="Créer"><a href="#">New account</a></div>
+				</div>
+				<div id="head_white">
+					<div class="all_text"><a href="#">HOME</a></div>
+					<div class="all_text"><a href="#">FEATURES</a></div>
+					<div class="all_text"><a href="#">COLLECTION</a></div>
+					<div class="all_text"><a href="#">SHOP</a></div>
+					<div class="all_text"><a href="#">ABOUT US</a></div>
+					<div id="search"><a href="#"><img src="image/seax.png"></a></div>
+					<div id="panier"><a href="#"><img src="image/cart.png"></a></div>
+				</div>
+		</header>
+		<div id="div-panier-container">
+			<h1>PANIER</h1>
+			<table id="paniers" cellspacing="0">
+					<thead>
+						<td></td>
+						<td>Nom</td>
+						<td>Taille</td>
+						<td>Quantité</td>
+						<td>Prix unitaire</td>
+					</thead>
+				<tr id="panier-total">
+					<td colspan="3"></td>
+					<td>TOTAL</td>
+					<td><?php echo $prixtotal; ?> FC</td>
+				</tr>
+
+				<tr id="panier-button">
+					<td colspan="2">
+						<a class="button" href="/congomarket">Continuer les achats</a>
+					</td>
+					<td></td>
+					<td colspan="2">
+						<form method="POST" action="acheter.php">
+							<input type="hidden" id="montant" name="montant">
+							<button type="submit">Acheter</button>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			<div id="footer-lines">
+				<div id="footer-line1">
+					<div class="footer-line1-display">
+						<div><img src="image/rocket.png"></div>
+						<div class="footer-text">
+							<span class="footer-text1">Free Shipping & Return</span><br>
+							<span>Free Shipping on order over $49</span>
+						</div>
+					</div>
+					<div class="footer-line1-display">
+						<div><img src="image/cash.png"></div>
+						<div class="footer-text">
+							<span class="footer-text1">Money Guarantee</span><br>
+							<span>30 days money back guarantee</span>
+						</div>
+					</div>
+					<div class="footer-line1-display">
+						<div><img src="image/headphone.png"></div>
+						<div class="footer-text">
+							<span class="footer-text1">Online Support</span><br>
+							<span>We support online 24 hours a day</span>
+						</div>
+					</div>
+				</div>
+				<div id="footer-line2">
+					<ul>
+						<li><h3>Contact Us</h3></li>
+						<li class="img-contact">
+							<img src="image/home.png">
+							<span class="img-contact-space"><a href="#" title="Visit us">45, Boulevard Sendwe Gombé, KIN, DRC</a></span><br>
+						</li>
+						<li class="img-contact">
+							<img src="image/mail.png">
+							<span class="img-contact-space"><a href="#" title="Send to us a mail">contact@congomarket.com</a></span><br>
+						</li>
+						<li class="img-contact">
+							<img src="image/phone.png">
+							<span class="img-contact-space"><a href="#" title="Call us">+243 971132498</a></span><br>
+						</li>
+						<li class="img-contact">	
+							<a href="#"title="follow us on Twitter"><img src="image/twitter.png"></a>
+							<div class="img-contact-space"><a href="#"title="follow us on Facebook"><img src="image/facebook.png"></a></div>
+							<div class="img-contact-space"><a href="#"title="follow us on Google +"><img src="image/google.png"></a></div>
+							<div class="img-contact-space"><a href="#"title="conatct us on Skype"><img src="image/skype.png"></a></div>
+							<div class="img-contact-space"><a href="#"title="follow us on Pinterest"><img src="image/pinterest.png"></a></div>
+							<div class="img-contact-space"><a title="follow us on Youtube"href="#"><img src="image/play.png"></a></div>
+							<div class="img-contact-space"><a href="#" title="follow us on Linked In"><img src="image/linkedin.png"></a></div>
+						</li>
+					</ul>
+					<ul>
+						<li><h3>Our Services</h3></li>
+						<li class="img-contact">New York</li>
+						<li class="img-contact">London SF</li>
+						<li class="img-contact">Cockfosters</li>
+						<li class="img-contact">Los Angeles</li>
+						<li class="img-contact">Kinshasa</li>
+					</ul>
+					<ul>
+						<li><h3>Extras</h3></li>
+						<li class="img-contact"><a href="#">About Store</a></li>
+						<li class="img-contact"><a href="#">New Collection</a></li>
+						<li class="img-contact"><a href="#">Contact Us</a></li>
+						<li class="img-contact"><a href="#">Latest News</a></li>
+						<li class="img-contact"><a href="#">Our Sitemap</a></li>
+					</ul>
+			</div>
+		</footer>
